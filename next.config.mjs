@@ -13,5 +13,14 @@ const config = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "tesla-cdn.thron.com",
+        pathname: "/**",
+      },
+    ],
+  },
 };
 export default config;

@@ -7,7 +7,7 @@ import { TeslaSVGLogo } from "../components/TeslaSVGLogo";
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
     <>
-      <header className="sticky flex items-center justify-between py-4">
+      <header className="fixed top-0 left-0 right-0 z-[9999] flex items-center justify-between py-4">
         <h1>
           <Link href="/">
             <TeslaSVGLogo />
