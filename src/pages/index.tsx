@@ -24,7 +24,7 @@ const Home: NextPage = () => {
                 alt="model-3"
                 width={500}
                 height={800}
-                className=" object-cover object-center md:object-fill lg:hidden"
+                className="h-auto w-full object-cover object-center md:hidden md:object-fill"
                 priority={true}
               />
               <Image
@@ -34,12 +34,12 @@ const Home: NextPage = () => {
                 alt="model-3"
                 width={2000}
                 height={2000}
-                className="hidden object-cover object-center lg:block"
+                className="hidden h-screen w-screen object-cover object-center md:block"
                 priority={true}
               />
             </div>
             <div className="grid h-full w-screen grid-cols-1 grid-rows-4 place-items-center ">
-              <div className="row-start-2 text-center">
+              <div className="row-start-2 text-center md:row-start-1">
                 <h1 className="text-4xl">Model 3</h1>
                 <Link
                   className="font-mono underline underline-offset-2"
@@ -48,7 +48,7 @@ const Home: NextPage = () => {
                   Schedule a Test Drive
                 </Link>
               </div>
-              <div className="row-start-4 flex w-full flex-col gap-4 px-6  md:flex-row">
+              <div className="row-start-4 flex w-full flex-col gap-4 px-6 md:flex-row md:justify-center">
                 <CtaButton displayText="Buy Now" primary />
                 <CtaButton displayText="Custom Order" primary={false} />
               </div>
