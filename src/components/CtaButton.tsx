@@ -9,7 +9,7 @@ export const CtaButton = ({ displayText, primary = false }: Props) => {
   return (
     <button
       type="button"
-      className={`rounded-md py-2 px-6 text-center text-sm capitalize backdrop-blur ${
+      className={`rounded-md bg-opacity-80 py-2 px-6 text-center text-sm capitalize backdrop-blur ${
         primary ? `bg-[rgb(23,26,32)] text-white` : `bg-white text-black`
       }`}
     >

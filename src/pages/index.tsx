@@ -16,7 +16,7 @@ const Home: NextPage = () => {
       <main>
         <section id="model-3">
           <div className="relative z-0 h-screen w-screen">
-            <div className="absolute inset-0 -z-10 h-full w-screen overflow-hidden">
+            <div className="absolute inset-0 -z-10 h-screen w-screen overflow-hidden">
               <Image
                 src={
                   "https://tesla-cdn.thron.com/delivery/public/image/tesla/9160c5a3-b818-42dd-bb98-b8597948c636/bvlatuR/std/1927x4096/M3-Homepage-Mobile-LHD"
@@ -24,7 +24,7 @@ const Home: NextPage = () => {
                 alt="model-3"
                 width={500}
                 height={800}
-                className="h-auto w-full object-cover object-center md:hidden md:object-fill"
+                className="h-screen w-full object-cover object-center sm:hidden"
                 priority={true}
               />
               <Image
@@ -34,23 +34,27 @@ const Home: NextPage = () => {
                 alt="model-3"
                 width={2000}
                 height={2000}
-                className="hidden h-screen w-screen object-cover object-center md:block"
+                className="hidden h-screen w-screen object-cover object-center sm:block"
                 priority={true}
               />
             </div>
-            <div className="grid h-full w-screen grid-cols-1 grid-rows-4 place-items-center ">
-              <div className="row-start-2 text-center md:row-start-1">
-                <h1 className="text-4xl">Model 3</h1>
-                <Link
-                  className="font-mono underline underline-offset-2"
-                  href={"/test-drive"}
-                >
-                  Schedule a Test Drive
-                </Link>
-              </div>
-              <div className="row-start-4 flex w-full flex-col gap-4 px-6 md:flex-row md:justify-center">
-                <CtaButton displayText="Buy Now" primary />
-                <CtaButton displayText="Custom Order" primary={false} />
+            <div className="flex h-screen items-center">
+              <div className="flex h-[70vh] w-screen flex-col justify-between">
+                <div className="text-center">
+                  <h1 className="text-4xl font-bold sm:text-5xl">Model 3</h1>
+                  <Link
+                    className="font-mono underline underline-offset-2"
+                    href={"/test-drive"}
+                  >
+                    Schedule a Test Drive
+                  </Link>
+                </div>
+                <div className="flex w-full py-4 md:justify-center">
+                  <div className="grid w-full grid-cols-1 gap-4 px-6 md:w-auto md:grid-cols-2 lg:w-[40%]">
+                    <CtaButton displayText="Buy Now" primary />
+                    <CtaButton displayText="Custom Order" primary={false} />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
