@@ -1,17 +1,27 @@
-import React, { useState } from "react";
+import Link from "next/link";
+import React from "react";
 
 export const Navbar = () => {
-  const [showMenu, setShowMenu] = useState(false);
-
   return (
-    <div>
-      <button
-        onClick={() => setShowMenu(!showMenu)}
-        type="button"
-        className="mx-auto rounded-md bg-black bg-opacity-5 px-2 py-1"
-      >
-        <span className="mx-2 text-sm font-semibold">Menu</span>
-      </button>
-    </div>
+    <ol className="flex items-center justify-center gap-4 whitespace-nowrap px-2 text-center">
+      <li className="mx-auto px-2 py-1 capitalize hover:rounded-md hover:bg-black hover:bg-opacity-5">
+        <Link href="#">Model S</Link>
+      </li>
+      <li className="mx-auto px-2 py-1 capitalize hover:rounded-md hover:bg-black hover:bg-opacity-5">
+        <Link href="#">Model 3</Link>
+      </li>
+      <li className="mx-auto px-2 py-1 capitalize hover:rounded-md hover:bg-black hover:bg-opacity-5">
+        <Link href="#">Model X</Link>
+      </li>
+      <li className="mx-auto px-2 py-1 capitalize hover:rounded-md hover:bg-black hover:bg-opacity-5">
+        <Link href="#">Model Y</Link>
+      </li>
+      <li className="mx-auto px-2 py-1 capitalize hover:rounded-md hover:bg-black hover:bg-opacity-5">
+        <Link href="#">Solar Roof</Link>
+      </li>
+      <li className="mx-auto px-2 py-1 capitalize hover:rounded-md hover:bg-black hover:bg-opacity-5">
+        <Link href="#">Solar Panels</Link>
+      </li>
+    </ol>
   );
 };
