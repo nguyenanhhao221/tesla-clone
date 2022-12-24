@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { CtaButton } from "../components/CtaButton";
+import { SlideButton } from "../components/SlideButton";
 
 const Home: NextPage = () => {
   return (
@@ -56,6 +57,9 @@ const Home: NextPage = () => {
                   </div>
                 </div>
               </div>
+            </div>
+            <div className="absolute bottom-4 left-1/2 right-1/2">
+              <SlideButton />
             </div>
           </div>
         </section>

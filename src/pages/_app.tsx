@@ -10,7 +10,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
     <>
       <header className="fixed top-0 left-0 right-0 z-[9999] flex items-center justify-between py-4">
         <h1 className="lg:basis-1/3">
-          <Link href="/">
+          <Link href="/" className="lg:border lg:border-red-500">
             <TeslaSVGLogo />
           </Link>
         </h1>
